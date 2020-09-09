@@ -1,0 +1,16 @@
+database:
+  dbname: "myapp"
+  user: "app"
+  password: "app@123"
+  location: "127.0.0.1"
+  port: "3306"
+application:
+  http-port: "8080"
+  name: "restapi-boilerplate"
+  description: "REST API boiler plate code go"
+log:
+  location: "/Users/vinodborole/Documents/personal/projects/bredec/restapi-boilerplate/log/"
+  # error, warning, info, debug
+  level: "info"
+  maxbackups: 250
+  maxage: 60   #days

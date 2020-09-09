@@ -1,0 +1,57 @@
+openapi: 3.0.0
+info:
+  title: Swagger MyApp
+  license:
+    name: MIT
+  version: 1.0.0
+servers:
+- url: http://localhost:8080/v1
+paths:
+  /about:
+    get:
+      tags:
+      - App
+      summary: Info about app
+      operationId: aboutApp
+      responses:
+        "200":
+          description: Expected response to a valid request
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/App'
+        default:
+          description: unexpected error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/Error'
+components:
+  schemas:
+    App:
+      type: object
+      properties:
+        name:
+          type: string
+        description:
+          type: string
+        url:
+          type: string
+        port:
+          type: string
+      example:
+        port: port
+        name: name
+        description: description
+        url: url
+    Error:
+      required:
+      - code
+      - message
+      type: object
+      properties:
+        code:
+          type: integer
+          format: int32
+        message:
+          type: string
