@@ -12,6 +12,7 @@
 *.out
 
 # Dependency directories (remove the comment below to include it)
+<<<<<<< HEAD
 **/vendor
 **/.DS_Store
 .idea/
@@ -21,3 +22,6 @@ pkg/**
 .cache
 .settings
 **/log
+=======
+# vendor/
+>>>>>>> 5442d0b8d71356fb1a88f718ec680849fe277160
