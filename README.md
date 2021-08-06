@@ -14,7 +14,7 @@ This includes following features
 
 # Usage
 
-Clone the project set the GOPATH to git clone directory and resolve dependency using dep ensure library management
+Clone the project
 
 ```
 #> git clone https://github.com/vinodborole/restapi-boilerplate.git
