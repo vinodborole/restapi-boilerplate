@@ -1,12 +1,7 @@
 package rest
 
 import (
-	"app/config"
-	"app/infra"
-	"app/infra/database"
-	"app/infra/logging"
 	"context"
-	log "github.com/sirupsen/logrus"
 	"net/http"
 	"os"
 	"os/signal"
@@ -14,6 +9,12 @@ import (
 	"sync/atomic"
 	"syscall"
 	"time"
+
+	log "github.com/sirupsen/logrus"
+	"github.com/vinodborole/restapi-boilerplate/src/app/config"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/database"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/logging"
 )
 
 //APIServer Receiver object for API Rest Server

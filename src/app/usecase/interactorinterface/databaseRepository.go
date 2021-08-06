@@ -1,8 +1,8 @@
 package interactorinterface
 
 import (
-	"app/infra/database"
 	"github.com/jinzhu/gorm"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/database"
 )
 
 //DatabaseRepository database repository

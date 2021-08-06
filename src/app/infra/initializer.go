@@ -1,10 +1,11 @@
 package infra
 
 import (
-	"app/gateway"
-	"app/infra/database"
-	"app/usecase"
 	"sync"
+
+	"github.com/vinodborole/restapi-boilerplate/src/app/gateway"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/database"
+	"github.com/vinodborole/restapi-boilerplate/src/app/usecase"
 )
 
 //UsecaseInteractor  provides receiver object for services

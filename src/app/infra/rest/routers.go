@@ -1,10 +1,11 @@
 package rest
 
 import (
-	ohandler "app/infra/rest/handler"
 	"fmt"
-	"github.com/gorilla/mux"
 	"net/http"
+
+	"github.com/gorilla/mux"
+	ohandler "github.com/vinodborole/restapi-boilerplate/src/app/infra/rest/handler"
 )
 
 //Route defines a unique route for a REST request

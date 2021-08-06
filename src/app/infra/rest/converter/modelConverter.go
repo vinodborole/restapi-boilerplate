@@ -1,8 +1,8 @@
 package converter
 
 import (
-	"app/infra/database"
-	Restmodel "app/infra/rest/generated/server/go"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/database"
+	Restmodel "github.com/vinodborole/restapi-boilerplate/src/app/infra/rest/generated/server/go"
 )
 
 //GetFitnessAppSwaggerResponse get fitness app swagger response

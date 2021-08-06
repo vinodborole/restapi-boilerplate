@@ -1,10 +1,11 @@
 package handler
 
 import (
-	"app/infra"
-	"app/infra/rest/converter"
 	"fmt"
 	"net/http"
+
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/rest/converter"
 )
 
 //About get app info

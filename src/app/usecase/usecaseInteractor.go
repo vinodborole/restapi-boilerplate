@@ -1,9 +1,10 @@
 package usecase
 
 import (
-	InteractorIntf "app/usecase/interactorinterface"
 	"context"
 	"sync"
+
+	InteractorIntf "github.com/vinodborole/restapi-boilerplate/src/app/usecase/interactorinterface"
 )
 
 //Interactor is the receiver object

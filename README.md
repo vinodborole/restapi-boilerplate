@@ -19,18 +19,47 @@ Clone the project set the GOPATH to git clone directory and resolve dependency u
 ```
 #> git clone https://github.com/vinodborole/restapi-boilerplate.git
 
+```
+Modify /restapi-boilerplateyaml/config.yaml as per your requirement
+
+If using Mysql, login and create empty database and a user
+
+```
+#>mysql -u root -p
+Enter password: 
+Welcome to the MariaDB monitor.  Commands end with ; or \g.
+Your MySQL connection id is 84882
+Server version: 8.0.21 MySQL Community Server - GPL
+
+Copyright (c) 2000, 2018, Oracle, MariaDB Corporation Ab and others.
+
+Type 'help;' or '\h' for help. Type '\c' to clear the current input statement.
+
+MySQL [(none)]> CREATE DATABASE myapp;
+Query OK, 1 row affected (0.005 sec)
+
+MySQL [(none)]> CREATE USER 'app'@localhost IDENTIFIED BY 'app@123';
+Query OK, 0 rows affected (0.012 sec)
+
+MySQL [(none)]> GRANT ALL PRIVILEGES ON myapp.* TO 'app'@localhost;
+Query OK, 0 rows affected (0.004 sec)
+
+MySQL [(none)]> FLUSH PRIVILEGES;
+Query OK, 0 rows affected (0.009 sec)
+
+```
+
+
+Update dependencies
+
+```
 #> cd restapi-boilerplate/src/app
-#restapi-boilerplate/src/app> dep ensure
+#restapi-boilerplate/src/app> go mod tidy
 
 #> cd restapi-boilerplate/scripts
 #restapi-boilerplate/scripts> sh build.sh
 
 ```
-Copy restapi-boilerplate/src/app/config/yaml folder inside /restapi-boilerplate/bin directory
-
-Modify /restapi-boilerplateyaml/config.yaml as per your requirement
-
-If using Mysql, login and create empty database.
 
 Execute App
 ```

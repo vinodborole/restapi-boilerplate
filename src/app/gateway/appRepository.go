@@ -1,6 +1,6 @@
 package gateway
 
-import "app/infra/database"
+import "github.com/vinodborole/restapi-boilerplate/src/app/infra/database"
 
 //GetApp get app info
 func (dbRepo *DatabaseRepository) GetApp(appName string) (database.App, error) {

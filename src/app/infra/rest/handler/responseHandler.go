@@ -1,10 +1,11 @@
 package handler
 
 import (
-	Restmodel "app/infra/rest/generated/server/go"
-	u "app/utils"
 	"encoding/json"
 	"net/http"
+
+	Restmodel "github.com/vinodborole/restapi-boilerplate/src/app/infra/rest/generated/server/go"
+	u "github.com/vinodborole/restapi-boilerplate/src/app/utils"
 )
 
 //HandleErrorResponse handle error response

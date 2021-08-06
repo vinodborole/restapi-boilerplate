@@ -13,9 +13,10 @@ evaluate_home_dir(){
 evaluate_home_dir
 echo "BASE_DIR" $BASE_DIR
 HOME_DIR=$BASE_DIR/restapi-boilerplate
-export GOPATH=$GOPATH$PATH_SEP$HOME_DIR
 
-echo "GOPATH" $GOPATH
+unset GOPATH
+export GO111MODULE=on
+export GOBIN=$HOME_DIR/bin
 
 #Build the code
 go env
@@ -44,3 +45,5 @@ golint $(go list ./... | grep -v generated|swagger)
 #Build the Code
 echo "Building server binary"
 go install
+
+cp $BASE_DIR/restapi-boilerplate/src/app/config/yaml/config.yaml $GOBIN

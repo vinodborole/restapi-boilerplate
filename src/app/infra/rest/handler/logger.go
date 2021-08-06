@@ -1,12 +1,13 @@
 package handler
 
 import (
-	"app/infra/logging"
 	"context"
-	log "github.com/sirupsen/logrus"
 	"net/http"
 	"strings"
 	"time"
+
+	log "github.com/sirupsen/logrus"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/logging"
 )
 
 //Logger is handler responsible for logging the REST request

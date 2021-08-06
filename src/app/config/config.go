@@ -1,10 +1,11 @@
 package config
 
 import (
-	"gopkg.in/yaml.v2"
 	"io/ioutil"
 	"os"
 	"path/filepath"
+
+	"gopkg.in/yaml.v2"
 )
 
 var configFile Config
@@ -67,8 +68,7 @@ func ReadYamlConfigFile() error {
 }
 
 func getConfigPath() string {
-	//return GetConfigPath() + "/yaml/config.yaml"
-	return "/Users/vinodborole/Documents/personal/projects/bredec/restapi-boilerplate/bin/yaml/config.yaml"
+	return GetConfigPath() + "/config.yaml"
 }
 
 //GetConfigPath get config path

@@ -1,15 +1,16 @@
 package main
 
 import (
-	"app/config"
-	"app/infra/rest"
 	"fmt"
-	"github.com/rifflock/lfshook"
-	log "github.com/sirupsen/logrus"
-	"gopkg.in/natefinch/lumberjack.v2"
 	"io/ioutil"
 	"sync"
 	"time"
+
+	"github.com/rifflock/lfshook"
+	log "github.com/sirupsen/logrus"
+	"github.com/vinodborole/restapi-boilerplate/src/app/config"
+	"github.com/vinodborole/restapi-boilerplate/src/app/infra/rest"
+	"gopkg.in/natefinch/lumberjack.v2"
 )
 
 func main() {

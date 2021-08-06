@@ -1,11 +1,12 @@
 package logging
 
 import (
-	"app/gateway/appcontext"
 	"context"
+	"time"
+
 	"github.com/google/uuid"
 	"github.com/sirupsen/logrus"
-	"time"
+	"github.com/vinodborole/restapi-boilerplate/src/app/gateway/appcontext"
 )
 
 //AuditLog Constants indicating the commands status on the Rest Server
